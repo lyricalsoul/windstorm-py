@@ -35,11 +35,6 @@ early_stopping = EarlyStopper(patience=10, min_delta=0)
 # load the data from the csv file7
 data = load_data()
 
-# we must drop the index column
-# before, print what column we are dropping
-# print the column length
-print(len(data.columns))
-
 # split the data into training and testing sets
 train_data, test_data = train_test_split(data, test_size=0.2, shuffle=False)
 
