@@ -12,9 +12,14 @@ windstorm
 ├── data_treatment
 │   ├──> Scripts para tratamento de dados provenients do BDMEP (Banco de Dados Meteorológicos do INMET)
 ├── models
-│   ├──> Modelos de Machine Learning para previsão de tempo
-├── hw_control
-│   ├──> Controle de hardware (Arduino/Firmata) para coleta contínua de dados
-├── training
-│   ├──> Scripts para treinamento dos modelos climatológicos
+│   ├──> Pasta de output do modelo já treinado
+├── raw_data
+│   ├──> exported_from_inmet
+│   │   ├──> Dados puros diretamente do INMET, sem tratamento de dados.
+│   ├──> semitreated
+│   │   ├──> Dados com algum nível de tratamento - normalmente somente normalização de fields como data.
+│   ├──> treated
+│   │   ├──> Dados já tratados (em sua maioria). O usado atualmente é MERGED_INMET_SERIES_2013-2024_TREATED_2.csv
+├── prediction
+│   ├──> Scripts para treinamento dos modelos climatológicos e execução do cliente WS de previsão climática.
 ```
